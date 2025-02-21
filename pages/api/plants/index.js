@@ -1,6 +1,15 @@
 import dbConnect from '../../../lib/dbConnect';
 import Plant from '../../../models/Plant';
 
+export const config = {
+    api: {
+      bodyParser: {
+        sizeLimit: '10mb', // Set appropriate limit
+      },
+    },
+  };
+  
+
 export default async function handler(req, res) {
   await dbConnect();
 
