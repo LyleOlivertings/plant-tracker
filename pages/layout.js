@@ -11,10 +11,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Valentines day proposal",
-  description: "A proposal for valentines day",
-};
+
 
 export default function RootLayout({ children }) {
   return (
