@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import '../styles/globals.css'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +11,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Plant Shop",
+  description: "A simple plant shop",
+};
 
 
 export default function RootLayout({ children }) {
